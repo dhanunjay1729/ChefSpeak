@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "chefspeak-voice",
+  "private_key_id": "50a9228d0ccad1c710d1ee2c2747abe1ec6a92ff",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCHmzHHF0Ob48St\nBWAu78g9wjSvWCUHXjpTgDj+fVSKXVD1UL7MdpSTGkr0xUI2NnFXXGBZT3xWXyuF\naKsmr+sEC7tp1AeB4IuVhNifyPlfHtJvQ8RTgzMiQ1CG0JBdGlM/xKHhjcsyv9lg\n/OtFXpwcluE5lxvp476lhyUBZyGlHLXLvodT72kGz/qKWkTat/UyspO4COJ4Scl7\nBxTpoop6z8ad0Q906ncXBSH4BSNC8REQkXEk7XXkoipiG1rAJQboFSTHkjlFH/MD\n/r8k7nPINcBkAnEVIYGGfTTJ0voHb/U4sM6X4zwi420zMCmtUzLbzouwB6+v4kCh\n+asFxFxdAgMBAAECgf9MnDxeeF/IcH71mJeLEWihe23/LMW+pbfng1Xxd9WM9tN1\nmEW9o+FiMo5vYptzOHNTlxcveuufP0mgQP4nNOPLn9x7++5tuqhxpGEysRYT6ODO\nGII/lhoovZW5jQTO5PqJnm/HkAq4kncYKEAwXljbLRHlAkZ5sML83lWUr9Oipq0u\n96P9HRxEZKsMBVKegyzxtmJ3NwdlNdGnDCKowtfzveQL8/HBS3OeH8A2YG5cMccD\n/DXOAgLywOjy6UCDVbqNxEqOtPQ7cRdtXUID7dKMc7lLQmwTAciQ4QReJ4BqjKb6\njY5mAxvUP4V9P/c1pdqNuMVxTjcaid0B7YIClbkCgYEAu3nyqknk2TyMkMSpBwnf\nrxanL1BuQUc5jYlL6gGMJ7LHnuYankDqh2kRKZCRfInWyme2FJJqY3yiCjk+QThB\npowr5FR3AWpYgu4N1CwMUJMdMwrAtEytzlC3uzsNgqli7qRYLJMbTYeBZ6xrNLWr\nlhWSDrdMODrnx0qzjmPKWjsCgYEAuSvKABAW+pVVE5NQ5zb9ji1JKqN7qdJFaVlJ\nwQU/uWok2ur3fqqs/B+vGGCmzfpyvMe400jlgjMP2hYqOMrrpaOBS5vSJTMwG2ff\nHglKzpz+E0+GnUrT8HOC83TtwEuNTyCGalKeONNXo/sjR3+SG6i+vseKaOAscqjd\nHt3kokcCgYA8sCJEy7zgMcCTEIZi9+hIBn5CS7gVO5g+4AYKD0wugaorHvPY7My+\n3t0mZl0iQoCcbuw7RpZX9D2EL7meZTajUlbXCByqAaH7aFJjr4qg/q6CGmX9N6E/\n21NOsbQS6wBSnjLI4yoAc/AI/oCJxJFx+TOZve5XeYIUOnNbkaQshwKBgQCcxFHU\nE8sgguTwGbxYw9mOURCspJPBhl91fT5Px93XX+Gr5Vl7R4wEN97JSKpvoCUbZgs3\n9XM483nsLO+5/THbnb2NAXK8Q8XqrdnbWAqZOZhxSNayu/MKkwC+lLPkJRKRdvvV\nb/S8L1D3Z1rK4VoVSJuUcOLhP0jiGcx6oWk7aQKBgQCKl7EUM9Kr4Oc/WYPBjVvW\nwe/zkOhZ+6AXfBh6j5qohXiGUABGqX4BhTLBglocypiuVhZzsExAg0rVJypzRdRi\n9rVZaPENtSvBZjNQtTZbZHfK16zoUqLK3KwLte1RTrmhkLq7dnoGhOmwkgiNYWDn\nX2KGqBYz3RiXoAhYtv/VZw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "tts-server@chefspeak-voice.iam.gserviceaccount.com",
+  "client_id": "104265135595938823495",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/tts-server%40chefspeak-voice.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

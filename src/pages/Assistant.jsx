@@ -54,6 +54,23 @@ export default function Assistant() {
     fetchLanguage();
   }, [user]);
 
+  const handleNext = () => {
+    const next = Math.min(currentStepIndex + 1, steps.length - 1);
+    setCurrentStepIndex(next);
+    speakViaGoogleTTS(steps[next], language);
+  };
+
+  const handleBack = () => {
+    const prev = Math.max(currentStepIndex - 1, 0);
+    setCurrentStepIndex(prev);
+    speakViaGoogleTTS(steps[prev], language);
+  };
+
+  const handleRepeat = () => {
+    speakViaGoogleTTS(steps[currentStepIndex], language);
+  };
+
+
   const handleMicClick = () => {
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
     if (!SpeechRecognition) {
@@ -106,7 +123,7 @@ export default function Assistant() {
 
   const fetchRecipeSteps = async (spokenText) => {
     try {
-      const prompt = `Give me a step-by-step recipe for making ${spokenText}. Respond only in ${language}.`;
+      const prompt = `Give me a detailed step-by-step recipe for making ${spokenText}. Respond only in ${language}. No bold letters, or special characters. Just clear, numbered steps.`;
 
       const response = await fetch("https://api.openai.com/v1/chat/completions", {
         method: "POST",
@@ -140,6 +157,11 @@ export default function Assistant() {
 
       setSteps(parsedSteps);
       setCurrentStepIndex(0);
+
+      // Read out the first step immediately
+      if (parsedSteps.length > 0) {
+        speakViaGoogleTTS(parsedSteps[0], language);
+      }
     } catch (err) {
       console.error("Error fetching recipe steps:", err);
     }
@@ -182,6 +204,14 @@ export default function Assistant() {
           </motion.div>
         ))}
       </div>
-    </div>
+    
+
+      <div className="fixed bottom-4 left-0 right-0 flex justify-center gap-4 px-4 z-50">
+        <Button className="bg-gray-800 hover:bg-gray-900 text-white font-semibold rounded-full px-6 py-3 shadow-xl transition-all duration-300" onClick={handleBack}>⬅ Back</Button>
+        <Button className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold rounded-full px-6 py-3 shadow-xl transition-all duration-300" onClick={handleRepeat}>🔁 Repeat</Button>
+        <Button className="bg-green-600 hover:bg-green-700 text-white font-semibold rounded-full px-6 py-3 shadow-xl transition-all duration-300" onClick={handleNext}>➡ Next</Button>
+      </div>
+
+</div>
   );
 }
